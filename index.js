@@ -16,10 +16,10 @@ app.use(cors({
 // the next two lines are only important if you are serving 
 // the static frontend from the express app
 
-/* app.use(express.static(path.join(__dirname, "frontend", 'build')));
+app.use(express.static(path.join(__dirname, "frontend", 'build')));
 app.get("", async (req, res) => {
     res.sendFile(path.join(__dirname, "frontend", 'build', 'index.html'));
-})*/
+})
 
 
 app.post("/api/register", register);
